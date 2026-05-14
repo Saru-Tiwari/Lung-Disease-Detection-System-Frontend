@@ -1,17 +1,39 @@
-# personal_health_assistant
+# 🫁 Lung Disease Detection System (AI + Flutter App)
 
-A new Flutter project.
+A deep learning-based mobile application that detects lung diseases such as **Pneumonia and Tuberculosis** from chest X-ray images using CNN models.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Project Overview
+This system helps in early detection of lung diseases using a trained Convolutional Neural Network (CNN) model.  
+Users can upload chest X-ray images through a Flutter mobile app, and the backend (Flask API) returns prediction results.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🧠 Features
+- 📱 Flutter mobile application UI
+- 🤖 CNN-based disease detection model
+- 🩻 Supports Pneumonia & Tuberculosis detection
+- 🌐 Flask backend API integration
+- ⚡ Fast prediction using trained deep learning model
+- 📊 Image preprocessing & classification
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Personal-Health-Assistant-Frontend
+---
+
+## 🏗️ Tech Stack
+
+**Frontend:**
+- Flutter (Dart)
+
+**Backend:**
+- Python
+- Flask
+- TensorFlow / Keras
+
+**Machine Learning:**
+- CNN (Convolutional Neural Network)
+- Image preprocessing (OpenCV, NumPy)
+
+---
+
+## 📂 Project Structure
