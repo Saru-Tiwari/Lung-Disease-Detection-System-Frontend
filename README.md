@@ -654,5 +654,9 @@ The system has not been clinically validated or approved for medical use.
 * Explainable AI
 * Healthcare AI
 * Data Science
+  ## Demo
+  
+
+https://github.com/user-attachments/assets/888eb0a5-0acd-4c89-a5eb-ec8b855f98ba
 
 
