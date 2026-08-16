@@ -150,18 +150,6 @@ The selected X-ray is sent to the Flask backend for inference.
 
 The backend returns the model prediction, which is then displayed by the Flutter application.
 
-Example:
-
-```text
-Prediction
-──────────────
-Pneumonia
-
-Confidence
-──────────────
-94%
-```
-
 ---
 
 ## 🎯 Localization
@@ -263,23 +251,6 @@ Flask API
 Flutter
 ```
 
-### Example Request
-
-```http
-POST /predict
-Content-Type: multipart/form-data
-```
-
-The image is sent to the backend as a multipart file.
-
-### Example Response
-
-```json
-{
-  "prediction": "Pneumonia",
-  "confidence": 0.94
-}
-```
 
 The exact API endpoint and response format depend on the backend implementation.
 
@@ -350,29 +321,6 @@ This repository contains:
 
 ---
 
-# 📦 Flutter Dependencies
-
-The project may use packages such as:
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-
-  http:
-  image_picker:
-```
-
-Additional dependencies should be listed according to the actual `pubspec.yaml`.
-
-Install dependencies with:
-
-```bash
-flutter pub get
-```
-
----
-
 # ⚙️ Requirements
 
 Before running the application, install:
@@ -390,63 +338,6 @@ flutter doctor
 ```
 
 ---
-
-# 🚀 Installation
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_FRONTEND_REPOSITORY.git
-```
-
-Navigate into the project:
-
-```bash
-cd YOUR_FRONTEND_REPOSITORY
-```
-
----
-
-## 2. Install Dependencies
-
-```bash
-flutter pub get
-```
-
----
-
-## 3. Configure Backend URL
-
-The Flutter application must point to the running Flask backend.
-
-For example:
-
-```dart
-const String baseUrl = "http://YOUR_BACKEND_IP:5000";
-```
-
-For Android emulator testing, the backend may need a different host address depending on the development environment.
-
-For a physical device, the phone and development machine generally need to be able to communicate over the same network when using a local backend.
-
-> Do not hard-code production credentials or private API keys into the Flutter application.
-
----
-
-# ▶️ Run the Application
-
-Connect an Android device or start an emulator.
-
-Then execute:
-
-```bash
-flutter run
-```
-
-The application should launch on the selected device.
-
----
-
 
 # 🎨 User Interface Flow
 
@@ -479,54 +370,10 @@ The Flutter application receives the response and displays:
 
 ---
 
-# 📊 Example Result
+# 📊 Result
 <img width="1344" height="2992" alt="d2c2870c86f634a199332765848c30ad" src="https://github.com/user-attachments/assets/a9065282-5471-4409-b5b7-7cc9fcb870d4" />
 
 
-# 📁 Project Structure
-
-The exact structure may vary, but a recommended organization is:
-
-```text
-lung-disease-flutter/
-│
-├── android/
-│
-├── ios/
-│
-├── lib/
-│   │
-│   ├── main.dart
-│   │
-│   ├── screens/
-│   │   ├── home_screen.dart
-│   │   ├── upload_screen.dart
-│   │   └── result_screen.dart
-│   │
-│   ├── services/
-│   │   └── api_service.dart
-│   │
-│   ├── models/
-│   │   └── prediction.dart
-│   │
-│   ├── widgets/
-│   │   ├── image_preview.dart
-│   │   └── result_card.dart
-│   │
-│   └── utils/
-│
-├── assets/
-│   └── images/
-│
-├── screenshots/
-│
-├── test/
-│
-├── pubspec.yaml
-└── README.md
-```
-
----
 
 # 🧪 Testing
 
@@ -567,53 +414,12 @@ This prevents backend failures from causing unexpected application behavior.
 
 ---
 
-# 🚀 Future Improvements
-
-Potential frontend improvements include:
-
-### 🎨 UI/UX
-
-* Improved medical image viewer
-* Interactive heatmap overlay
-* Zoom and pan
-* Side-by-side X-ray comparison
-* Prediction history
-* Improved accessibility
-
 ### 🔬 Research Visualization
 
 * Confidence visualization
-* Multiple model comparison
 * Grad-CAM overlay controls
 * Localization mask visualization
 
-### 🌐 Production Architecture
-
-* HTTPS
-* Authentication
-* Secure API communication
-* Cloud deployment
-* Backend monitoring
-* Request logging
-
----
-
-# 🔬 Research Relevance
-
-Although this repository focuses on the **Flutter frontend**, it is part of a broader research-oriented medical AI system involving:
-
-* Computer Vision
-* Deep Learning
-* Medical Image Analysis
-* Healthcare AI
-* Explainable AI
-* Model Localization
-* Mobile AI
-* AI-assisted diagnostic research
-
-The frontend demonstrates the integration of research models into an end-to-end usable application.
-
----
 
 # ⚠️ Limitations
 
@@ -644,16 +450,7 @@ The system has not been clinically validated or approved for medical use.
 
 **Computer Engineering | AI/ML | Computer Vision**
 
-### Research Interests
 
-* Artificial Intelligence
-* Machine Learning
-* Deep Learning
-* Computer Vision
-* Medical Image Analysis
-* Explainable AI
-* Healthcare AI
-* Data Science
   ## Demo
   
 
